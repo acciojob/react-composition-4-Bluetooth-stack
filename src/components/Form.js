@@ -30,6 +30,7 @@ const Form = () => {
              obj[name] = value;
         }
         setValues(obj);
+        console.log(values);
     }
 
     return (
