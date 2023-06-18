@@ -8,7 +8,7 @@ const formData = [
         label: 'Name'
     },
     {
-        name: 'mailId',
+        name: 'email',
         type: 'email',
         label: 'Email'
     },
@@ -20,7 +20,7 @@ const formData = [
 ]
 
 const Form = () => {
-    const [values, setValues] = useState({});
+    // const [values, setValues] = useState({});
 
     function submitListener(e) {
         e.preventDefault();
@@ -29,8 +29,8 @@ const Form = () => {
         for (const [name, value] of data) {
              obj[name] = value;
         }
-        setValues(obj);
-        console.log(values);
+        // setValues(obj);
+        console.log(obj);
     }
 
     return (
